@@ -83,10 +83,29 @@ curl -X POST http://localhost:4000/api/products \
 - Express.js
 - JSON file storage
 
+## Project Structure
+
+```
+├── api/                 # Backend API (Node.js + Express)
+├── frontend/           # Frontend React Application
+├── package.json        # Backend dependencies
+└── README.md          # This file
+```
+
 ## Deployment
 
+### Backend
 This backend is deployed on Render at: [Your Render URL]
 
-## Frontend Repository
+### Frontend
+The React frontend is located in the `/frontend` folder and can be deployed to Netlify:
 
-The React frontend is available at: https://github.com/Mrteesoft/ecomerce-frontend
+1. Navigate to the frontend folder: `cd frontend`
+2. Install dependencies: `npm install --legacy-peer-deps`
+3. Update the API URL in `frontend/.env`
+4. Build: `npm run build`
+5. Deploy the `build` folder to Netlify
+
+## Frontend Setup
+
+See `frontend/README.md` for detailed frontend setup instructions.

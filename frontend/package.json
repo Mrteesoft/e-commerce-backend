@@ -8,6 +8,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "0.24.0",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
     "bootstrap": "^5.2.1",
     "chartist": "0.10.1",
     "classnames": "2.3.1",
