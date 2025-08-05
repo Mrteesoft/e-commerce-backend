@@ -16,12 +16,13 @@
     "mongoose": "^5.11.8",
     "mongoose-url-slugs": "^1.0.2",
     "stripe": "^13.11.0",
-    "paytmchecksum": "^1.5.1"
+    "paytmchecksum": "^1.5.1",
+    "body-parser": "^1.19.0"
   },
   "scripts": {
     "start": "node api/server.js",
     "dev": "node api/server.js",
-    "build": "echo 'Backend build complete'"
+    "build": "echo 'Backend dependencies installed'"
   },
   "engines": {
     "node": ">=14.0.0"
