@@ -7,7 +7,7 @@
     "category": "Apparel",
     "brand": "ComfortWear",
     "stock": 150,
-    "imageUrl": "https://example.com/images/cotton-tshirt.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
     "ratings": 4.5,
     "numOfReviews": 89
   },
@@ -19,7 +19,7 @@
     "category": "Electronics",
     "brand": "SoundTech",
     "stock": 75,
-    "imageUrl": "https://example.com/images/bluetooth-headphones.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
     "ratings": 4.8,
     "numOfReviews": 156
   },
@@ -31,7 +31,7 @@
     "category": "Apparel",
     "brand": "DenimCo",
     "stock": 200,
-    "imageUrl": "https://example.com/images/denim-jeans.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop",
     "ratings": 4.3,
     "numOfReviews": 67
   },
@@ -43,7 +43,7 @@
     "category": "Electronics",
     "brand": "ProtectPlus",
     "stock": 300,
-    "imageUrl": "https://example.com/images/phone-case.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=400&fit=crop",
     "ratings": 4.2,
     "numOfReviews": 234
   },
@@ -55,7 +55,7 @@
     "category": "Apparel",
     "brand": "RunFast",
     "stock": 120,
-    "imageUrl": "https://example.com/images/running-sneakers.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
     "ratings": 4.7,
     "numOfReviews": 198
   },
@@ -67,7 +67,7 @@
     "category": "Home & Kitchen",
     "brand": "BrewMaster",
     "stock": 45,
-    "imageUrl": "https://example.com/images/coffee-maker.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop",
     "ratings": 4.4,
     "numOfReviews": 112
   },
@@ -79,7 +79,7 @@
     "category": "Apparel",
     "brand": "WarmWear",
     "stock": 80,
-    "imageUrl": "https://example.com/images/winter-jacket.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop",
     "ratings": 4.6,
     "numOfReviews": 143
   },
@@ -91,7 +91,7 @@
     "category": "Electronics",
     "brand": "ErgoTech",
     "stock": 95,
-    "imageUrl": "https://example.com/images/laptop-stand.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop",
     "ratings": 4.1,
     "numOfReviews": 78
   },
@@ -103,7 +103,7 @@
     "category": "Apparel",
     "brand": "StyleCo",
     "stock": 110,
-    "imageUrl": "https://example.com/images/casual-dress.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop",
     "ratings": 4.5,
     "numOfReviews": 92
   },
@@ -115,7 +115,7 @@
     "category": "Sports & Fitness",
     "brand": "ZenFit",
     "stock": 180,
-    "imageUrl": "https://example.com/images/yoga-mat.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop",
     "ratings": 4.3,
     "numOfReviews": 156
   },
@@ -127,7 +127,7 @@
     "category": "Electronics",
     "brand": "GameTech",
     "stock": 50,
-    "imageUrl": "https://example.com/images/gaming-mouse.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=400&fit=crop",
     "ratings": 0,
     "numOfReviews": 0
   },
@@ -139,7 +139,7 @@
     "category": "Test Category",
     "brand": "TestBrand",
     "stock": 10,
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=400&fit=crop",
     "ratings": 0,
     "numOfReviews": 0
   },
@@ -151,7 +151,7 @@
     "category": "Electronics",
     "brand": "GamePro",
     "stock": 75,
-    "imageUrl": "https://example.com/images/gaming-keyboard.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&h=400&fit=crop",
     "ratings": 0,
     "numOfReviews": 0
   },
@@ -163,7 +163,7 @@
     "category": "Electronics",
     "brand": "TestBrand",
     "stock": 0,
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop",
     "ratings": 0,
     "numOfReviews": 0
   }
