@@ -9,6 +9,9 @@ const app = express();
 // config
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config({ path: 'backend/config/config.env' });
+} else {
+    // Production environment - use environment variables
+    require('dotenv').config();
 }
 
 // CORS middleware

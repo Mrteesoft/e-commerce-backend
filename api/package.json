@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "E-commerce backend API built with Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cookie-parser": "^1.4.6",
+    "express-fileupload": "^1.5.1",
+    "express-validator": "^6.8.1",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "ecommerce",
+    "api",
+    "backend",
+    "nodejs",
+    "express"
+  ],
+  "author": "Mrteesoft",
+  "license": "MIT"
+}
