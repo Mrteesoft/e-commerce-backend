@@ -7,13 +7,19 @@
 When creating a new Web Service on Render, use these settings:
 
 **Build & Deploy Settings:**
-- **Build Command**: `npm install`
+- **Build Command**: `npm install` (or leave empty, Render auto-detects)
 - **Start Command**: `npm start`
 - **Node Version**: Use default (latest)
 
 **Environment Variables:**
 - `NODE_ENV` = `production`
 - `PORT` = `4000` (optional, Render will set this automatically)
+
+**Alternative: Use render.yaml (Recommended)**
+The repository includes a `render.yaml` file that automatically configures:
+- Build command: `npm install`
+- Start command: `npm start`
+- Environment variables
 
 ### Step 2: Repository Setup
 
@@ -65,17 +71,27 @@ CLOUDINARY_API_SECRET=your_cloudinary_secret
 
 **Common Issues:**
 
-1. **Build fails with "react-scripts not found"**
+1. **"Cannot find module 'express'" Error**
+   - ✅ Fixed: Added all required dependencies to package.json
+   - ✅ Fixed: Created render.yaml with proper build command
+   - Solution: Render now runs `npm install` before starting
+
+2. **Build fails with "react-scripts not found"**
    - ✅ Fixed: Updated package.json build script
 
-2. **Port binding issues**
+3. **Port binding issues**
    - ✅ Fixed: Using process.env.PORT
 
-3. **CORS errors**
+4. **CORS errors**
    - ✅ Fixed: CORS middleware already added
 
-4. **Environment variables not loading**
+5. **Environment variables not loading**
    - Add them in Render dashboard under Environment tab
+
+6. **Dependencies not installing**
+   - Check that package.json has all required dependencies
+   - Verify build command is set to `npm install`
+   - Check build logs for specific error messages
 
 ### Expected Deployment URL
 
