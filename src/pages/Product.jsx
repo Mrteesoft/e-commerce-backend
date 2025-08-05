@@ -24,16 +24,27 @@ const Product = () => {
     const getProduct = async () => {
       setLoading(true);
       setLoading2(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-      const data = await response.json();
-      setProduct(data);
-      setLoading(false);
-      const response2 = await fetch(
-        `https://fakestoreapi.com/products/category/${data.category}`
-      );
-      const data2 = await response2.json();
-      setSimilarProducts(data2);
-      setLoading2(false);
+      try {
+        // Get single product
+        const response = await fetch(`http://localhost:4000/api/products/${id}`);
+        const result = await response.json();
+        if (result.success) {
+          setProduct(result.data);
+          setLoading(false);
+
+          // Get similar products by category
+          const response2 = await fetch(`http://localhost:4000/api/products?category=${result.data.category}`);
+          const result2 = await response2.json();
+          if (result2.success) {
+            setSimilarProducts(result2.data);
+          }
+        }
+        setLoading2(false);
+      } catch (error) {
+        console.error("Error fetching product:", error);
+        setLoading(false);
+        setLoading2(false);
+      }
     };
     getProduct();
   }, [id]);
@@ -69,21 +80,25 @@ const Product = () => {
             <div className="col-md-6 col-sm-12 py-3">
               <img
                 className="img-fluid"
-                src={product.image}
-                alt={product.title}
+                src={product.imageUrl || "https://via.placeholder.com/400x400?text=No+Image"}
+                alt={product.name}
                 width="400px"
                 height="400px"
               />
             </div>
             <div className="col-md-6 col-md-6 py-5">
               <h4 className="text-uppercase text-muted">{product.category}</h4>
-              <h1 className="display-5">{product.title}</h1>
+              <h1 className="display-5">{product.name}</h1>
               <p className="lead">
-                {product.rating && product.rating.rate}{" "}
-                <i className="fa fa-star"></i>
+                <span className="text-muted">Brand: </span>{product.brand}
+              </p>
+              <p className="lead">
+                {product.ratings}{" "}
+                <i className="fa fa-star"></i> ({product.numOfReviews} reviews)
               </p>
               <h3 className="display-6  my-4">${product.price}</h3>
               <p className="lead">{product.description}</p>
+              <p className="text-muted">Stock: {product.stock} available</p>
               <button
                 className="btn btn-outline-dark"
                 onClick={() => addProduct(product)}
@@ -133,15 +148,16 @@ const Product = () => {
                 <div key={item.id} className="card mx-4 text-center">
                   <img
                     className="card-img-top p-3"
-                    src={item.image}
+                    src={item.imageUrl || "https://via.placeholder.com/300x300?text=No+Image"}
                     alt="Card"
                     height={300}
                     width={300}
                   />
                   <div className="card-body">
                     <h5 className="card-title">
-                      {item.title.substring(0, 15)}...
+                      {item.name.substring(0, 15)}...
                     </h5>
+                    <p className="card-text">${item.price}</p>
                   </div>
                   {/* <ul className="list-group list-group-flush">
                     <li className="list-group-item lead">${product.price}</li>
