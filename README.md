@@ -1,22 +1,14 @@
-# E-commerce Full-Stack Application
+# E-commerce Backend API
 
-A complete e-commerce application with React frontend and Node.js backend API.
+A RESTful API for an e-commerce platform built with Node.js and Express.js.
 
 ## Features
 
-### Backend API
 - RESTful Product API
 - Category-based filtering
 - JSON file-based data storage
 - Input validation and error handling
 - CORS support for frontend integration
-
-### Frontend
-- React.js application
-- Product listing and detail pages
-- Category filtering
-- Shopping cart functionality
-- Responsive design with Bootstrap
 
 ## API Endpoints
 
@@ -46,25 +38,13 @@ Install dependencies
 npm install --legacy-peer-deps
 ```
 
-Start the full application (both backend and frontend)
+Start the backend server
 
 ```bash
 npm start
 ```
 
-This will start:
-- Backend API server at: `http://localhost:4000`
-- Frontend React app at: `http://localhost:3000`
-
-Or start them separately:
-
-```bash
-# Backend only
-npm run server
-
-# Frontend only
-npm run client
-```
+The API server will be running at: `http://localhost:4000`
 
 ## Usage Examples
 
@@ -99,19 +79,14 @@ curl -X POST http://localhost:4000/api/products \
 
 ## Tech Stack
 
-### Backend
 - Node.js
 - Express.js
 - JSON file storage
 
-### Frontend
-- React.js
-- Redux for state management
-- Bootstrap for styling
-- React Router for navigation
+## Deployment
 
-## Application URLs
+This backend is deployed on Render at: [Your Render URL]
 
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:4000
-- **API Base**: http://localhost:4000/api
+## Frontend Repository
+
+The React frontend is available at: https://github.com/Mrteesoft/ecomerce-frontend

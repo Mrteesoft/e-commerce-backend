@@ -31,18 +31,8 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 
-const user = require('./routes/userRoute');
-const product = require('./routes/productRoute');
-const order = require('./routes/orderRoute');
-const payment = require('./routes/paymentRoute');
-const basicProduct = require('./routes/basicProductRoute');
-
-app.use('/api/v1', user);
-app.use('/api/v1', product);
-app.use('/api/v1', order);
-app.use('/api/v1', payment);
-
 // Basic Product API routes (for test requirements)
+const basicProduct = require('./routes/basicProductRoute');
 app.use('/api', basicProduct);
 
 // deployment
@@ -274,4 +264,3 @@ module.exports = app;
 
 
 
-const errorPayment = require('./controllers/paymentController');
